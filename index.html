@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="calculator-body">
@@ -13,28 +14,28 @@
         </div>
         <div class="calculator-buttons">
             <div class="top-buttons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>+</button>
+                <button onclick="numberInput('7')">7</button>
+                <button onclick="numberInput('8')">8</button>
+                <button onclick="numberInput('9')">9</button>
+                <button onclick="setOperator('+')">+</button>
             </div>
             <div class="middle-top-buttons">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <button onclick="numberInput('4')">4</button>
+                <button onclick="numberInput('5')">5</button>
+                <button onclick="numberInput('6')">6</button>
+                <button onclick="setOperator('-')">-</button>
             </div>
             <div class="middle-bottom-buttons">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>*</button>
+                <button onclick="numberInput('1')">1</button>
+                <button onclick="numberInput('2')">2</button>
+                <button onclick="numberInput('3')">3</button>
+                <button onclick="setOperator('*')">*</button>
             </div>
             <div class="bottom-buttons">
-                <button>C</button>
-                <button>0</button>
-                <button>=</button>
-                <button>/</button>
+                <button onclick="clearFunction()">C</button>
+                <button onclick="numberInput('0')">0</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="setOperator('/')">/</button>
             </div>
             
         </div>
